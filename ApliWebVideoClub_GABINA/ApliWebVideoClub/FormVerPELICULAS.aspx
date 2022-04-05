@@ -46,7 +46,40 @@
                     <td class="style32">
                         &nbsp;</td>
                     <td class="style103">
-                        &lt;Utilizar uno o varios GridView para ver las películas&gt;</td>
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="codigoPelicula" DataSourceID="AccessDataSource2">
+                            <Columns>
+                                <asp:BoundField DataField="codigoPelicula" HeaderText="codigoPelicula" ReadOnly="True" SortExpression="codigoPelicula" />
+                                <asp:BoundField DataField="Titulo" HeaderText="Titulo" SortExpression="Titulo" />
+                                <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                                <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
+                                <asp:BoundField DataField="fechaPublicacion" HeaderText="fechaPublicacion" SortExpression="fechaPublicacion" />
+                                <asp:BoundField DataField="fechaAdquisicion" HeaderText="fechaAdquisicion" SortExpression="fechaAdquisicion" />
+                            </Columns>
+                        </asp:GridView>
+                        <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select * from PELICULA where  datediff( &quot;d&quot;, now() , fechaAdquisicion ) &lt;=7"></asp:AccessDataSource>
+                    </td>
+                </tr>
+             <tr>
+                    <td class="style32">
+                        &nbsp;</td>
+                    <td class="style103">
+                        &nbsp;</td>
+                </tr>
+             <tr>
+                    <td class="style32">
+                        <asp:Label ID="Label1" runat="server" Text="Pon un nombre aqui:"></asp:Label>
+                    </td>
+                    <td class="style103">
+                        <asp:TextBox ID="Nombre" runat="server"></asp:TextBox>
+                        <asp:Button ID="Mostrar" runat="server" Text="Mostrar Saludo" />
+                    </td>
+                </tr>
+             <tr>
+                    <td class="style32">
+                        &nbsp;</td>
+                    <td class="style103">
+                        <asp:Label ID="Mensaje" runat="server"></asp:Label>
+                    </td>
                 </tr>
                 </table>
  </div>

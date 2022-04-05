@@ -109,3 +109,14 @@ C:\Users\mapprgac\Desktop\ApliWebVideoClubINIAccess2017_18\ApliWebVideoClub\obj\
 C:\Users\mapprgac\Desktop\ApliWebVideoClubINIAccess2017_18\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.dll
 C:\Users\mapprgac\Desktop\ApliWebVideoClubINIAccess2017_18\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.xml
 C:\Users\mapprgac\Desktop\ApliWebVideoClubINIAccess2017_18\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.pdb
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\bin\ApliWebVideoClub.dll.config
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\bin\ApliWebVideoClub.dll
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\bin\ApliWebVideoClub.pdb
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\bin\ApliWebVideoClub.xml
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.vbproj.AssemblyReference.cache
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.Resources.resources
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.vbproj.GenerateResource.cache
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.vbproj.CoreCompileInputs.cache
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.dll
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.xml
+C:\Users\xabie\Documents\GitHub\BD-Proyecto\ApliWebVideoClub_GABINA\ApliWebVideoClub\obj\Debug\ApliWebVideoClub.pdb
