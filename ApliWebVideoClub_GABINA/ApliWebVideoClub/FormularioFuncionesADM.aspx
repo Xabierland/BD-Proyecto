@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="FormularioFuncionesADM.aspx.vb" Inherits="ApliWebVideoClub.FormularioFuncionesADM" %>
    <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
-      <style type="text/css">
+       <style type="text/css">
         .style2
         {
             width: 66px;
@@ -53,7 +53,7 @@
             
             color:Black;
             font-size:medium;
-              height: 426px;
+              height: 2306px;
           }
           .style102
           {
@@ -108,8 +108,9 @@
                     UsuarioLogin del socio a 
                     cambiar de estado</td>
                 <td class="style28">
-                    <asp:TextBox ID="NombreLogin" runat="server"  
-                        ToolTip="Introduzca el usuario con el que accede al sistema el socio a cambiar" SkinID="-1"></asp:TextBox>
+                    <asp:DropDownList ID="nombreLogin" runat="server" DataSourceID="AccessDataSource1" DataTextField="usuarioLogin" DataValueField="usuarioLogin">
+                    </asp:DropDownList>
+                    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="SELECT usuarioLogin from SOCIO where usuarioLogin not like &quot;administrador&quot;"></asp:AccessDataSource>
                 </td>
                 <td>
                     <asp:Button ID="cambiarEstadoSocio" runat="server" Text="Cambiar estado" />
@@ -119,7 +120,41 @@
                 <td class="style20">
                     &nbsp;</td>
                 <td class="style103" >
-                    <strong>&lt;Visualizar aquí los datos del socio&gt;</strong></td>
+                    <asp:DataList ID="DataList1" runat="server" CellPadding="4" DataKeyField="usuarioLogin" DataSourceID="AccessDataSource3" ForeColor="#333333">
+                        <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <ItemStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <ItemTemplate>
+                            usuarioLogin:
+                            <asp:Label ID="usuarioLoginLabel" runat="server" Text='<%# Eval("usuarioLogin") %>' />
+                            <br />
+                            nombre_apellido:
+                            <asp:Label ID="nombre_apellidoLabel" runat="server" Text='<%# Eval("nombre_apellido") %>' />
+                            <br />
+                            Direccion:
+                            <asp:Label ID="DireccionLabel" runat="server" Text='<%# Eval("Direccion") %>' />
+                            <br />
+                            Credito:
+                            <asp:Label ID="CreditoLabel" runat="server" Text='<%# Eval("Credito") %>' />
+                            <br />
+                            Fecha_Hora_Alta:
+                            <asp:Label ID="Fecha_Hora_AltaLabel" runat="server" Text='<%# Eval("Fecha_Hora_Alta") %>' />
+                            <br />
+                            Estado:
+                            <asp:Label ID="EstadoLabel" runat="server" Text='<%# Eval("Estado") %>' />
+                            <br />
+                            <br />
+                        </ItemTemplate>
+                        <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    </asp:DataList>
+                    <asp:AccessDataSource ID="AccessDataSource3" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select * from SOCIO where usuarioLogin=?
+">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="nombreLogin" Name="?" PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:AccessDataSource>
+                </td>
                 <td class="style28">
                     &nbsp;</td>
                 <td>
@@ -159,7 +194,8 @@
                 <td class="style12">
                     &nbsp;</td>
                 <td class="style104">
-                    <strong>&lt;Poner aquí el resto de datos a pedir&gt;</strong></td>
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
                 <td class="style31">
                     &nbsp;</td>
                 <td class="style23">
@@ -184,8 +220,9 @@
                 <td class="style24">
                     Código de la película a dar de baja</td>
                 <td class="style31">
-                    <asp:TextBox ID="codPeliculaBaja" runat="server"  
-                        ToolTip="Introduzca el código de la película a dar de baja" SkinID="-1"></asp:TextBox>
+                    <asp:DropDownList ID="codPeliculaBaja" runat="server" DataSourceID="AccessDataSource2" DataTextField="codigoPelicula" DataValueField="codigoPelicula">
+                    </asp:DropDownList>
+                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select codigoPelicula from PELICULA"></asp:AccessDataSource>
                 </td>
                 <td class="style23">
                     <asp:Button ID="DarDeBajaPeli" runat="server" Text="Dar de baja esta película" />
@@ -197,7 +234,41 @@
                 <td class="style12">
                     &nbsp;</td>
                 <td class="style104">
-                    <strong>&lt;Visualizar aquí los datos de la peli&gt;</strong></td>
+                    <asp:DataList ID="DataList2" runat="server" CellPadding="4" DataKeyField="codigoPelicula" DataSourceID="AccessDataSource4" ForeColor="#333333">
+                        <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
+                        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                        <ItemStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                        <ItemTemplate>
+                            codigoPelicula:
+                            <asp:Label ID="codigoPeliculaLabel" runat="server" Text='<%# Eval("codigoPelicula") %>' />
+                            <br />
+                            Titulo:
+                            <asp:Label ID="TituloLabel" runat="server" Text='<%# Eval("Titulo") %>' />
+                            <br />
+                            Precio:
+                            <asp:Label ID="PrecioLabel" runat="server" Text='<%# Eval("Precio") %>' />
+                            <br />
+                            Estado:
+                            <asp:Label ID="EstadoLabel" runat="server" Text='<%# Eval("Estado") %>' />
+                            <br />
+                            fechaPublicacion:
+                            <asp:Label ID="fechaPublicacionLabel" runat="server" Text='<%# Eval("fechaPublicacion") %>' />
+                            <br />
+                            fechaAdquisicion:
+                            <asp:Label ID="fechaAdquisicionLabel" runat="server" Text='<%# Eval("fechaAdquisicion") %>' />
+                            <br />
+<br />
+                        </ItemTemplate>
+                        <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                    </asp:DataList>
+                    <asp:AccessDataSource ID="AccessDataSource4" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select * from PELICULA where codigoPelicula=?
+">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="codPeliculaBaja" Name="?" PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:AccessDataSource>
+                </td>
                 <td class="style31">
                     &nbsp;</td>
                 <td class="style23">

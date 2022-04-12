@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="FormularioFuncionesSOCIO.aspx.vb" Inherits="ApliWebVideoClub.FormularioFuncionesSOCIO" %>
    <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
-      <style type="text/css">
+       <style type="text/css">
         .style2
         {
             width: 66px;
@@ -64,6 +64,21 @@
               font-weight: bold;
               font-size: large;
           }
+           .auto-style1 {
+               width: 202px;
+               height: 32px;
+           }
+           .auto-style2 {
+               width: 320px;
+               height: 32px;
+           }
+           .auto-style3 {
+               width: 174px;
+               height: 32px;
+           }
+           .auto-style4 {
+               height: 32px;
+           }
     </style>
  </asp:Content>
    
@@ -109,15 +124,15 @@
                 </td>
             </tr>
             <tr>
-                <td class="style20">
-                    &nbsp;</td>
-                <td class="style27" >
+                <td class="auto-style1">
+                    </td>
+                <td class="auto-style2" >
                     Dirección</td>
-                <td class="style28">
+                <td class="auto-style3">
                     <asp:TextBox ID="Direccion" runat="server"></asp:TextBox>
                 </td>
-                <td>
-                    &nbsp;</td>
+                <td class="auto-style4">
+                    </td>
             </tr>
         </table>
              
@@ -166,7 +181,10 @@
                 <td class="style24">
                     Seleccione de la lista la película a alquilar</td>
                 <td class="style31">
-                    <strong>&lt;insertar aquí DropDownList&gt;</strong></td>
+                    <asp:DropDownList ID="peliculaAAlquilar" runat="server" DataSourceID="AccessDataSource1" DataTextField="Titulo" DataValueField="Titulo">
+                    </asp:DropDownList>
+                    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select Titulo from PELICULA where Estado=&quot;Disponible&quot;"></asp:AccessDataSource>
+                </td>
                 <td class="style23">
                     <asp:Button ID="Alquilar" runat="server" Text="Alquilar" />
                     </td>
@@ -190,7 +208,14 @@
                 <td class="style24">
                     Seleccione de la lista la película a devolver</td>
                 <td class="style31">
-                    <strong>&lt;insertar aquí DropDownList con los nombres de las pelis&gt;</strong></td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="AccessDataSource2">
+                    </asp:DropDownList>
+                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="SELECT Titulo FROM ALQUILER INNER JOIN PELICULA ON ALQUILER.peliID=PELICULA.codigoPelicula where ALQUILER.userLogin=? and PELICULA.estado=&quot;Alquilada&quot; and ALQUILER.fechaDevolucion IS NULL;">
+                        <SelectParameters>
+                            <asp:SessionParameter DefaultValue="" Name="?" SessionField="usuarioLogin" />
+                        </SelectParameters>
+                    </asp:AccessDataSource>
+                </td>
                 <td class="style23">
                     <asp:Button ID="Devolver" runat="server" Text="Devolver" />
                     </td>

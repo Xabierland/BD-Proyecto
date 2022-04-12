@@ -14,13 +14,22 @@ Option Explicit On
 Partial Public Class FormularioFuncionesADM
 
     '''<summary>
-    '''Control NombreLogin.
+    '''Control nombreLogin.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents NombreLogin As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents nombreLogin As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control AccessDataSource1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource1 As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
     '''Control cambiarEstadoSocio.
@@ -30,6 +39,24 @@ Partial Public Class FormularioFuncionesADM
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents cambiarEstadoSocio As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control DataList1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DataList1 As Global.System.Web.UI.WebControls.DataList
+
+    '''<summary>
+    '''Control AccessDataSource3.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource3 As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
     '''Control mostrarDatosSocio.
@@ -59,13 +86,31 @@ Partial Public Class FormularioFuncionesADM
     Protected WithEvents DarDeAltaPeli As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control codPeliculaBaja.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents codPeliculaBaja As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents codPeliculaBaja As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control AccessDataSource2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource2 As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
     '''Control DarDeBajaPeli.
@@ -75,6 +120,24 @@ Partial Public Class FormularioFuncionesADM
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents DarDeBajaPeli As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control DataList2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DataList2 As Global.System.Web.UI.WebControls.DataList
+
+    '''<summary>
+    '''Control AccessDataSource4.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource4 As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
     '''Control mostrarDatosPeli.

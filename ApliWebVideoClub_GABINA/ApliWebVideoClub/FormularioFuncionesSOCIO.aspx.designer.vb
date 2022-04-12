@@ -59,6 +59,24 @@ Partial Public Class FormularioFuncionesSOCIO
     Protected WithEvents Aumentar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control peliculaAAlquilar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents peliculaAAlquilar As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control AccessDataSource1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource1 As Global.System.Web.UI.WebControls.AccessDataSource
+
+    '''<summary>
     '''Control Alquilar.
     '''</summary>
     '''<remarks>
@@ -66,6 +84,24 @@ Partial Public Class FormularioFuncionesSOCIO
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Alquilar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control DropDownList1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control AccessDataSource2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AccessDataSource2 As Global.System.Web.UI.WebControls.AccessDataSource
 
     '''<summary>
     '''Control Devolver.

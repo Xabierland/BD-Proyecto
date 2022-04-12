@@ -108,9 +108,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._NombreLogin">
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._nombreLogin">
 <summary>
-Control NombreLogin.
+Control nombreLogin.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._AccessDataSource1">
+<summary>
+Control AccessDataSource1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -120,6 +129,24 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ApliWebVideoClub.FormularioFuncionesADM._cambiarEstadoSocio">
 <summary>
 Control cambiarEstadoSocio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._DataList1">
+<summary>
+Control DataList1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._AccessDataSource3">
+<summary>
+Control AccessDataSource3.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -162,9 +189,36 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._AccessDataSource2">
+<summary>
+Control AccessDataSource2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ApliWebVideoClub.FormularioFuncionesADM._DarDeBajaPeli">
 <summary>
 Control DarDeBajaPeli.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._DataList2">
+<summary>
+Control DataList2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._AccessDataSource4">
+<summary>
+Control AccessDataSource4.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -234,9 +288,45 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliculaAAlquilar">
+<summary>
+Control peliculaAAlquilar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._AccessDataSource1">
+<summary>
+Control AccessDataSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._Alquilar">
 <summary>
 Control Alquilar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._DropDownList1">
+<summary>
+Control DropDownList1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._AccessDataSource2">
+<summary>
+Control AccessDataSource2.
 </summary>
 <remarks>
 Campo generado automáticamente.

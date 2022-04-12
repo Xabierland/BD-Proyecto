@@ -63,5 +63,43 @@ Public Class FormularioFuncionesSOCIO
         Response.Redirect("default.aspx")
     End Sub
 
+    Protected Sub Aumentar_Click(sender As Object, e As EventArgs) Handles Aumentar.Click
+        Dim conexion As OleDb.OleDbConnection
+        Dim instruccionSQL As String
+        Dim dbComm As OleDbCommand
+        conexion = New OleDb.OleDbConnection(cadenaConexion)
+        conexion.Open()
 
+        instruccionSQL = "UPDATE SOCIO SET CREDITO=CREDITO + ? WHERE usuarioLogin=?"
+        dbComm = New OleDbCommand(instruccionSQL, conexion)
+        dbComm.Parameters.Add("param1", OleDbType.Double)
+        dbComm.Parameters("param1").Value = CDbl(cantidadEuros.Text)
+        dbComm.Parameters.Add("param2", OleDbType.VarChar)
+        dbComm.Parameters("param2").Value = usuario
+        dbComm.ExecuteNonQuery()
+        MsgBox("Se ha aumentado el crédito del socio")
+        conexion.Close()
+        conexion.Dispose()
+    End Sub
+
+    Protected Sub Modificar_Click(sender As Object, e As EventArgs) Handles Modificar.Click
+        Dim conexion As OleDb.OleDbConnection
+        Dim instruccionSQL As String
+        Dim dbComm As OleDbCommand
+        conexion = New OleDb.OleDbConnection(cadenaConexion)
+        conexion.Open()
+
+        instruccionSQL = "UPDATE socio SET nombre_apellido=?,Direccion=? where usuarioLogin=?"
+        dbComm = New OleDbCommand(instruccionSQL, conexion)
+        dbComm.Parameters.Add("param1", OleDbType.VarChar)
+        dbComm.Parameters("param1").Value = Nombre.Text
+        dbComm.Parameters.Add("param2", OleDbType.VarChar)
+        dbComm.Parameters("param2").Value = Direccion.Text
+        dbComm.Parameters.Add("param3", OleDbType.VarChar)
+        dbComm.Parameters("param3").Value = usuario
+        dbComm.ExecuteNonQuery()
+        MsgBox("Se ha actualizado los datos del socio")
+        conexion.Close()
+        conexion.Dispose()
+    End Sub
 End Class
