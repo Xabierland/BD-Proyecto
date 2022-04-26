@@ -171,6 +171,51 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._estadoPeliculaAlta">
+<summary>
+Control estadoPeliculaAlta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._TituloPeliculaAlta">
+<summary>
+Control TituloPeliculaAlta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._precioPeliculaAlta">
+<summary>
+Control precioPeliculaAlta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._fechaPublicacion">
+<summary>
+Control fechaPublicacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ApliWebVideoClub.FormularioFuncionesADM._DarDeAltaPeli">
 <summary>
 Control DarDeAltaPeli.
@@ -315,9 +360,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._DropDownList1">
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliculaADevolver">
 <summary>
-Control DropDownList1.
+Control peliculaADevolver.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -435,6 +480,42 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ApliWebVideoClub.Site._MainContent">
 <summary>
 Control MainContent.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.WebForm1._TextBox1">
+<summary>
+Control TextBox1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.WebForm1._Button1">
+<summary>
+Control Button1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.WebForm1._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ApliWebVideoClub.WebForm1._AccessDataSource1">
+<summary>
+Control AccessDataSource1.
 </summary>
 <remarks>
 Campo generado automáticamente.

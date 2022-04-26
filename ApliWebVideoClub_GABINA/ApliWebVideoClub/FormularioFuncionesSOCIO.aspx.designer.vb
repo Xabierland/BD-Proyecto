@@ -86,13 +86,13 @@ Partial Public Class FormularioFuncionesSOCIO
     Protected WithEvents Alquilar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control DropDownList1.
+    '''Control peliculaADevolver.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents peliculaADevolver As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control AccessDataSource2.

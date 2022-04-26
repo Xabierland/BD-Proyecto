@@ -69,17 +69,20 @@ Public Class FormularioFuncionesSOCIO
         Dim dbComm As OleDbCommand
         conexion = New OleDb.OleDbConnection(cadenaConexion)
         conexion.Open()
+        Try
+            instruccionSQL = "UPDATE SOCIO SET CREDITO=CREDITO + ? WHERE usuarioLogin=?"
+            dbComm = New OleDbCommand(instruccionSQL, conexion)
+            dbComm.Parameters.Add("param1", OleDbType.Double)
+            dbComm.Parameters("param1").Value = CDbl(cantidadEuros.Text)
+            dbComm.Parameters.Add("param2", OleDbType.VarChar)
+            dbComm.Parameters("param2").Value = usuario
+            dbComm.ExecuteNonQuery()
+            MsgBox("Se ha aumentado el crédito del socio")
+            conexion.Close()
+            conexion.Dispose()
+        Catch ex As Exception
 
-        instruccionSQL = "UPDATE SOCIO SET CREDITO=CREDITO + ? WHERE usuarioLogin=?"
-        dbComm = New OleDbCommand(instruccionSQL, conexion)
-        dbComm.Parameters.Add("param1", OleDbType.Double)
-        dbComm.Parameters("param1").Value = CDbl(cantidadEuros.Text)
-        dbComm.Parameters.Add("param2", OleDbType.VarChar)
-        dbComm.Parameters("param2").Value = usuario
-        dbComm.ExecuteNonQuery()
-        MsgBox("Se ha aumentado el crédito del socio")
-        conexion.Close()
-        conexion.Dispose()
+        End Try
     End Sub
 
     Protected Sub Modificar_Click(sender As Object, e As EventArgs) Handles Modificar.Click
@@ -99,6 +102,98 @@ Public Class FormularioFuncionesSOCIO
         dbComm.Parameters("param3").Value = usuario
         dbComm.ExecuteNonQuery()
         MsgBox("Se ha actualizado los datos del socio")
+        conexion.Close()
+        conexion.Dispose()
+    End Sub
+
+    Protected Sub Alquilar_Click(sender As Object, e As EventArgs) Handles Alquilar.Click
+        Dim conexion As OleDb.OleDbConnection
+        Dim dbComm As OleDbCommand
+        Dim strSQL As String
+        conexion = New OleDb.OleDbConnection(cadenaConexion)
+        conexion.Open()
+
+        Dim transaccion As OleDbTransaction
+        transaccion = conexion.BeginTransaction
+
+        Try
+            'COMPROBAMOS EL SALDO'
+            strSQL = "select credito from socio where usuarioLogin='" & usuario & "'"
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            Dim saldo As Double
+            saldo = dbComm.ExecuteScalar()
+
+            strSQL = "select Precio from Pelicula where Titulo='" & peliculaAAlquilar.Text & "'"
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            Dim precio As Double
+            precio = dbComm.ExecuteScalar()
+
+            strSQL = "select codigoPelicula from Pelicula where Titulo='" & peliculaAAlquilar.Text & "'"
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            Dim peliID As Integer
+            peliID = dbComm.ExecuteScalar()
+
+            If saldo >= precio Then
+                'Restamos el precio de la pelicula
+                strSQL = "update Socio set credito=" & saldo - precio & " where usuarioLogin='" & usuario & "'"
+                dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+                dbComm.ExecuteNonQuery()
+                'Ponemos la pelicula como alquilada
+                strSQL = "update Pelicula set estado='Alquilada' where titulo='" & peliculaAAlquilar.Text & "'"
+                dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+                dbComm.ExecuteNonQuery()
+                'Creamos el alquiler
+                strSQL = "insert into Alquiler(userLogin, peliID, fechaAlquiler, fechaDevolucion) values('" & usuario & "'," & peliID & ",DATE(),NULL)"
+                dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+                dbComm.ExecuteNonQuery()
+                transaccion.Commit()
+                MsgBox("Se ha alquilado una pelicula")
+            Else
+                MsgBox("Saldo insuficiente")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            transaccion.Rollback()
+        End Try
+        peliculaAAlquilar.DataBind()
+        peliculaADevolver.DataBind()
+        conexion.Close()
+        conexion.Dispose()
+    End Sub
+
+    Protected Sub Devolver_Click(sender As Object, e As EventArgs) Handles Devolver.Click
+        Dim conexion As OleDb.OleDbConnection
+        Dim dbComm As OleDbCommand
+        Dim strSQL As String
+        conexion = New OleDb.OleDbConnection(cadenaConexion)
+        conexion.Open()
+        Dim peliID As Integer
+
+        Dim transaccion As OleDbTransaction
+        transaccion = conexion.BeginTransaction
+
+        Try
+            strSQL = "select codigoPelicula from Pelicula where Titulo='" & peliculaADevolver.Text & "'"
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            peliID = dbComm.ExecuteScalar()
+
+            'Ponemos la pelicula como disponible
+            strSQL = "update Pelicula set estado='Disponible' where titulo='" & peliculaADevolver.Text & "'"
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            dbComm.ExecuteNonQuery()
+
+            'Cerramos el alquiler
+            strSQL = "update Alquiler set fechaDevolucion=DATE() where userLogin='" & usuario & "' AND peliID=" & peliID
+            dbComm = New OleDbCommand(strSQL, conexion, transaccion)
+            dbComm.ExecuteNonQuery()
+
+            transaccion.Commit()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            transaccion.Rollback()
+        End Try
+        peliculaAAlquilar.DataBind()
+        peliculaADevolver.DataBind()
         conexion.Close()
         conexion.Dispose()
     End Sub
