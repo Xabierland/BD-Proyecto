@@ -77,15 +77,6 @@ Partial Public Class FormularioFuncionesADM
     Protected WithEvents codPeliculaAlta As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control DarDeAltaPeli.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents DarDeAltaPeli As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''Control Label1.
     '''</summary>
     '''<remarks>
@@ -93,6 +84,51 @@ Partial Public Class FormularioFuncionesADM
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control estadoPeliculaAlta.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents estadoPeliculaAlta As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control TituloPeliculaAlta.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents TituloPeliculaAlta As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control precioPeliculaAlta.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents precioPeliculaAlta As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control fechaPublicacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents fechaPublicacion As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control DarDeAltaPeli.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DarDeAltaPeli As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control codPeliculaBaja.

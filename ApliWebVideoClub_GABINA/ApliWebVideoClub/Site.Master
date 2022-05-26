@@ -37,6 +37,7 @@
                          <asp:MenuItem NavigateUrl="~/FormularioFuncionesADM.aspx" Text="Funciones ADMINISTRADOR"/>
                          <asp:MenuItem NavigateUrl="~/FormularioFuncionesSOCIO.aspx" Text="Funciones SOCIO"/>
                          <asp:MenuItem NavigateUrl="~/FormVerPELICULAS.aspx" Text="Catálogo PELICULAS"/>
+                         <asp:MenuItem NavigateUrl="~/Estadisticas.aspx" Text="Estadisticas" />
                     </Items>
                 </asp:Menu>
             </div>

@@ -71,6 +71,23 @@
               width: 309px;
               color: #FF0000;
           }
+           .auto-style1 {
+               width: 202px;
+               height: 32px;
+           }
+           .auto-style2 {
+               width: 10px;
+               height: 32px;
+           }
+           .auto-style4 {
+               width: 158px;
+               color: #FF0000;
+               height: 32px;
+           }
+           .auto-style5 {
+               width: 73px;
+               height: 32px;
+           }
     </style>
  </asp:Content>
    
@@ -185,21 +202,61 @@
                         ToolTip="Introduzca el código de la película a dar de alta" SkinID="-1"></asp:TextBox>
                 </td>
                 <td class="style23">
-                    <asp:Button ID="DarDeAltaPeli" runat="server" Text="Dar de alta película" />
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    </td>
+                <td class="auto-style2">
+                    </td>
+                <td class="style24">
+                    <asp:Label ID="Label1" runat="server" Text="Estado de la pelicula"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="estadoPeliculaAlta" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style5">
                     </td>
             </tr>
             <tr>
-                <td class="style20">
+                <td class="auto-style1">
                     &nbsp;</td>
-                <td class="style12">
+                <td class="auto-style2">
                     &nbsp;</td>
-                <td class="style104">
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                <td class="style24">
+                    Titulo</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TituloPeliculaAlta" runat="server"></asp:TextBox>
                 </td>
-                <td class="style31">
+                <td class="auto-style5">
                     &nbsp;</td>
-                <td class="style23">
+            </tr>
+            <tr>
+                <td class="auto-style1">
                     &nbsp;</td>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="style24">
+                    Precio</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="precioPeliculaAlta" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style5">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">
+                    &nbsp;</td>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="style24">
+                    fechaPublicacion</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="fechaPublicacion" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style5">
+                    <asp:Button ID="DarDeAltaPeli" runat="server" Text="Dar de alta película" />
+                    </td>
             </tr>
             </table>
                       <br />

@@ -208,11 +208,11 @@
                 <td class="style24">
                     Seleccione de la lista la película a devolver</td>
                 <td class="style31">
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="AccessDataSource2">
+                    <asp:DropDownList ID="peliculaADevolver" runat="server" DataSourceID="AccessDataSource2" DataTextField="Titulo" DataValueField="Titulo">
                     </asp:DropDownList>
-                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="SELECT Titulo FROM ALQUILER INNER JOIN PELICULA ON ALQUILER.peliID=PELICULA.codigoPelicula where ALQUILER.userLogin=? and PELICULA.estado=&quot;Alquilada&quot; and ALQUILER.fechaDevolucion IS NULL;">
+                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="SELECT Pelicula.Titulo FROM ALQUILER INNER JOIN PELICULA ON ALQUILER.peliID=PELICULA.codigoPelicula where ALQUILER.userLogin=? and PELICULA.estado=&quot;Alquilada&quot; and ALQUILER.fechaDevolucion IS NULL;">
                         <SelectParameters>
-                            <asp:SessionParameter DefaultValue="" Name="?" SessionField="usuarioLogin" />
+                            <asp:SessionParameter Name="?" SessionField="usuarioLogin" />
                         </SelectParameters>
                     </asp:AccessDataSource>
                 </td>
