@@ -53,7 +53,7 @@
             
             color:Black;
             font-size:medium;
-              height: 2306px;
+              height: 1499px;
           }
           .style102
           {
