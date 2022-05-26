@@ -5,9 +5,4 @@
 
     End Sub
 
-    Protected Sub Mostrar_Click(sender As Object, e As EventArgs) Handles Mostrar.Click
-        Dim varNombre As String
-        varNombre = Me.Nombre.Text
-        Me.Mensaje.Text = "Hola " & varNombre & "!"
-    End Sub
 End Class

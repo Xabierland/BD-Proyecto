@@ -64,21 +64,6 @@
               font-weight: bold;
               font-size: large;
           }
-           .auto-style1 {
-               width: 202px;
-               height: 32px;
-           }
-           .auto-style2 {
-               width: 320px;
-               height: 32px;
-           }
-           .auto-style3 {
-               width: 174px;
-               height: 32px;
-           }
-           .auto-style4 {
-               height: 32px;
-           }
     </style>
  </asp:Content>
    
@@ -124,15 +109,15 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">
-                    </td>
-                <td class="auto-style2" >
+                <td class="style20">
+                    &nbsp;</td>
+                <td class="style27" >
                     Dirección</td>
-                <td class="auto-style3">
+                <td class="style28">
                     <asp:TextBox ID="Direccion" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style4">
-                    </td>
+                <td>
+                    &nbsp;</td>
             </tr>
         </table>
              
@@ -181,9 +166,9 @@
                 <td class="style24">
                     Seleccione de la lista la película a alquilar</td>
                 <td class="style31">
-                    <asp:DropDownList ID="peliculaAAlquilar" runat="server" DataSourceID="AccessDataSource1" DataTextField="Titulo" DataValueField="Titulo">
+                    <asp:DropDownList ID="peliAlquilar" runat="server" DataSourceID="AccessDataSource1" DataTextField="titulo" DataValueField="titulo">
                     </asp:DropDownList>
-                    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select Titulo from PELICULA where Estado=&quot;Disponible&quot;"></asp:AccessDataSource>
+                    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="D:\TEMP\VIDEOCLUB_ESTEBAN.mdb" SelectCommand="SELECT titulo FROM PELICULA WHERE estado='DISPONIBLE'"></asp:AccessDataSource>
                 </td>
                 <td class="style23">
                     <asp:Button ID="Alquilar" runat="server" Text="Alquilar" />
@@ -208,9 +193,9 @@
                 <td class="style24">
                     Seleccione de la lista la película a devolver</td>
                 <td class="style31">
-                    <asp:DropDownList ID="peliculaADevolver" runat="server" DataSourceID="AccessDataSource2" DataTextField="Titulo" DataValueField="Titulo">
+                    <asp:DropDownList ID="peliDevolver" runat="server" DataSourceID="AccessDataSource2" DataTextField="titulo" DataValueField="titulo">
                     </asp:DropDownList>
-                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="SELECT Pelicula.Titulo FROM ALQUILER INNER JOIN PELICULA ON ALQUILER.peliID=PELICULA.codigoPelicula where ALQUILER.userLogin=? and PELICULA.estado=&quot;Alquilada&quot; and ALQUILER.fechaDevolucion IS NULL;">
+                    <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="D:\TEMP\VIDEOCLUB_ESTEBAN.mdb" SelectCommand="SELECT titulo FROM ALQUILER INNER JOIN PELICULA ON ALQUILER.codigo=PELICULA.codigo WHERE usuarioLogin=? AND fechaDevolucion IS NULL">
                         <SelectParameters>
                             <asp:SessionParameter Name="?" SessionField="usuarioLogin" />
                         </SelectParameters>

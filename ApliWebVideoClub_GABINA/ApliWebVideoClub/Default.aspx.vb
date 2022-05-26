@@ -5,7 +5,7 @@ Public Class _Default
     'Asigna a Usuario el LoginName actual pasado a minúsculas (para las comparaciones)
     Dim usuario As String = StrConv(System.Web.HttpContext.Current.User.Identity.Name, VbStrConv.Lowercase)
     'Indicamos la cadena de conexion (tipo OLEDB)
-    Dim cadenaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\TEMP\VIDEOCLUB_GABINA.mdb"
+    Dim cadenaConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\TEMP\VIDEOCLUB_ESTEBAN.mdb"
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'Crea una VARIABLE DE SESIÓN llamada usuarioLogin y le asigna el LoginName actual pasado a minúsculas

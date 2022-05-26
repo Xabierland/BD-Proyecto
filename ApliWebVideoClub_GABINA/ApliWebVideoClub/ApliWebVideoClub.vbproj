@@ -107,6 +107,7 @@
     <Content Include="FormularioFuncionesADM.aspx" />
     <Content Include="FormularioFuncionesSOCIO.aspx" />
     <Content Include="FormVerPELICULAS.aspx" />
+    <Content Include="MiEstadistica.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -122,7 +123,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Estadisticas.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.designer.vb">
@@ -191,6 +191,13 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MiEstadistica.aspx.designer.vb">
+      <DependentUpon>MiEstadistica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MiEstadistica.aspx.vb">
+      <DependentUpon>MiEstadistica.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -216,13 +223,6 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Estadisticas.aspx.designer.vb">
-      <DependentUpon>Estadisticas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Estadisticas.aspx.vb">
-      <DependentUpon>Estadisticas.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

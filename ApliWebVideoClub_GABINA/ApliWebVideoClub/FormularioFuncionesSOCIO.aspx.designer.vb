@@ -59,13 +59,13 @@ Partial Public Class FormularioFuncionesSOCIO
     Protected WithEvents Aumentar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control peliculaAAlquilar.
+    '''Control peliAlquilar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents peliculaAAlquilar As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents peliAlquilar As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control AccessDataSource1.
@@ -86,13 +86,13 @@ Partial Public Class FormularioFuncionesSOCIO
     Protected WithEvents Alquilar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control peliculaADevolver.
+    '''Control peliDevolver.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents peliculaADevolver As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents peliDevolver As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control AccessDataSource2.

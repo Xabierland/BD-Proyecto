@@ -108,9 +108,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._nombreLogin">
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._NombreLogin">
 <summary>
-Control nombreLogin.
+Control NombreLogin.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -171,27 +171,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._Label1">
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._DarDeAltaPeli">
 <summary>
-Control Label1.
+Control DarDeAltaPeli.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._estadoPeliculaAlta">
+<member name="F:ApliWebVideoClub.FormularioFuncionesADM._tituloPeliculaAlta">
 <summary>
-Control estadoPeliculaAlta.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._TituloPeliculaAlta">
-<summary>
-Control TituloPeliculaAlta.
+Control tituloPeliculaAlta.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -201,24 +192,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ApliWebVideoClub.FormularioFuncionesADM._precioPeliculaAlta">
 <summary>
 Control precioPeliculaAlta.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._fechaPublicacion">
-<summary>
-Control fechaPublicacion.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesADM._DarDeAltaPeli">
-<summary>
-Control DarDeAltaPeli.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -333,9 +306,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliculaAAlquilar">
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliAlquilar">
 <summary>
-Control peliculaAAlquilar.
+Control peliAlquilar.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -360,9 +333,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliculaADevolver">
+<member name="F:ApliWebVideoClub.FormularioFuncionesSOCIO._peliDevolver">
 <summary>
-Control peliculaADevolver.
+Control peliDevolver.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -405,45 +378,45 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormVerPELICULAS._AccessDataSource2">
+<member name="F:ApliWebVideoClub.FormVerPELICULAS._AccessDataSource1">
 <summary>
-Control AccessDataSource2.
+Control AccessDataSource1.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormVerPELICULAS._Label1">
+<member name="F:ApliWebVideoClub.MiEstadistica._TITULO">
 <summary>
-Control Label1.
+Control TITULO.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormVerPELICULAS._Nombre">
+<member name="F:ApliWebVideoClub.MiEstadistica._Button1">
 <summary>
-Control Nombre.
+Control Button1.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormVerPELICULAS._Mostrar">
+<member name="F:ApliWebVideoClub.MiEstadistica._GridView1">
 <summary>
-Control Mostrar.
+Control GridView1.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ApliWebVideoClub.FormVerPELICULAS._Mensaje">
+<member name="F:ApliWebVideoClub.MiEstadistica._AccessDataSource1">
 <summary>
-Control Mensaje.
+Control AccessDataSource1.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -480,42 +453,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:ApliWebVideoClub.Site._MainContent">
 <summary>
 Control MainContent.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.WebForm1._TextBox1">
-<summary>
-Control TextBox1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.WebForm1._Button1">
-<summary>
-Control Button1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.WebForm1._GridView1">
-<summary>
-Control GridView1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:ApliWebVideoClub.WebForm1._AccessDataSource1">
-<summary>
-Control AccessDataSource1.
 </summary>
 <remarks>
 Campo generado automáticamente.

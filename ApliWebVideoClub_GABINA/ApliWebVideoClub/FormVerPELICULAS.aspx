@@ -46,39 +46,28 @@
                     <td class="style32">
                         &nbsp;</td>
                     <td class="style103">
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="codigoPelicula" DataSourceID="AccessDataSource2">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="usuarioLogin" DataSourceID="AccessDataSource1" ForeColor="#333333" GridLines="None">
+                            <AlternatingRowStyle BackColor="White" />
                             <Columns>
-                                <asp:BoundField DataField="codigoPelicula" HeaderText="codigoPelicula" ReadOnly="True" SortExpression="codigoPelicula" />
-                                <asp:BoundField DataField="Titulo" HeaderText="Titulo" SortExpression="Titulo" />
-                                <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                                <asp:BoundField DataField="usuarioLogin" HeaderText="usuarioLogin" ReadOnly="True" SortExpression="usuarioLogin" />
+                                <asp:BoundField DataField="nombre_apellido" HeaderText="nombre_apellido" SortExpression="nombre_apellido" />
+                                <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
+                                <asp:BoundField DataField="Credito" HeaderText="Credito" SortExpression="Credito" />
+                                <asp:BoundField DataField="Fecha_Hora_Alta" HeaderText="Fecha_Hora_Alta" SortExpression="Fecha_Hora_Alta" />
                                 <asp:BoundField DataField="Estado" HeaderText="Estado" SortExpression="Estado" />
-                                <asp:BoundField DataField="fechaPublicacion" HeaderText="fechaPublicacion" SortExpression="fechaPublicacion" />
-                                <asp:BoundField DataField="fechaAdquisicion" HeaderText="fechaAdquisicion" SortExpression="fechaAdquisicion" />
                             </Columns>
+                            <EditRowStyle BackColor="#2461BF" />
+                            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#EFF3FB" />
+                            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                            <SortedDescendingHeaderStyle BackColor="#4870BE" />
                         </asp:GridView>
-                        <asp:AccessDataSource ID="AccessDataSource2" runat="server" DataFile="C:\TEMP\VIDEOCLUB_GABINA.mdb" SelectCommand="select * from PELICULA where  datediff( &quot;d&quot;, now() , fechaAdquisicion ) &lt;=7"></asp:AccessDataSource>
-                    </td>
-                </tr>
-             <tr>
-                    <td class="style32">
-                        &nbsp;</td>
-                    <td class="style103">
-                        &nbsp;</td>
-                </tr>
-             <tr>
-                    <td class="style32">
-                        <asp:Label ID="Label1" runat="server" Text="Pon un nombre aqui:"></asp:Label>
-                    </td>
-                    <td class="style103">
-                        <asp:TextBox ID="Nombre" runat="server"></asp:TextBox>
-                        <asp:Button ID="Mostrar" runat="server" Text="Mostrar Saludo" />
-                    </td>
-                </tr>
-             <tr>
-                    <td class="style32">
-                        &nbsp;</td>
-                    <td class="style103">
-                        <asp:Label ID="Mensaje" runat="server"></asp:Label>
+                        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="D:\TEMP\VIDEOCLUB_ESTEBAN.mdb" SelectCommand="SELECT * FROM SOCIO"></asp:AccessDataSource>
                     </td>
                 </tr>
                 </table>
